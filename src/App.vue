@@ -52,12 +52,11 @@
           Math.random() * 100 - 50
         )
       },
-      onThrowout({ target, throwDirection }) {
-        console.log(`Threw out ${target.textContent}!`);
-        const parent = document.getElementsByClassName('swing')[0]
-      target.setAttribute('style', 'opacity: 0')
       
+      onThrowout({ target, throwDirection }) {
+        target.setAttribute('style', 'opacity: 0');
       },
+      
       getPic(val) {
           return require('./assets/images/'+val);
       },
